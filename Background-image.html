@@ -5,12 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background:linear-gradient(45deg, orange,red);
+        div{
+            height:20vh;
+            width:60%;
+            border: thin solid black;
         }
+        .lgdegree{
+            background:linear-gradient(45deg,red,yellow);
+        }
+        .lgsidetoside{
+            background-color:linear-gradient(to left top,red,yellow);
+        }
+        .lgoklab{
+            background-color:linear-gradient(in oklab,red,yellow);
+        }
+        .lghsl{
+            background-color:linear-gradient(in hsl,red,yellow);
+        }
+        .lglongerhsl{
+            background-color:linear-gradient(in hsl longer hue,red,yellow);
+        }
+
     </style>
 </head>
 <body>
-    
+    <div class="lgdegree">linear gradient using degrees</div>
+    <div class="lgsidetoside">linear gradient using side like top left top right</div>
+    <div class="lgoklab">linear gradient using oklab parameters</div>
+    <div class="lghsl">linear gradient using hsl parameters</div>
+    <div class="lglongerhsl">linear gradient using longer hsl parameters</div>
+    <div></div>
+    <div></div>
+    <div></div>
 </body>
 </html>
